@@ -1,5 +1,3 @@
-
-
 package demo;
 
 import java.time.Duration;
@@ -20,7 +18,7 @@ public class TestCase {
     private wrapperMethods seleniumWrapper;
 
     @BeforeSuite(alwaysRun = true)
-    public void setUp() {
+    public void startTest() {
         System.out.println("TestCases Started:");
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
